@@ -4,6 +4,14 @@ import { CONTACT_LINKS, EXPERIENCE, NAV_ITEMS, PROJECTS, RESUME_URL } from "./da
 
 /* ---------- hooks ---------- */
 
+// Instant jump to top (html has scroll-behavior:smooth, and "instant" isn't supported everywhere)
+function jumpToTop() {
+  const root = document.documentElement;
+  root.style.scrollBehavior = "auto";
+  window.scrollTo(0, 0);
+  root.style.scrollBehavior = "";
+}
+
 // Tracks which section is "current" while scrolling (null = hero / top of page)
 function useScrollSpy(ids, enabled = true) {
   const [active, setActive] = useState(null);
@@ -259,7 +267,7 @@ function Shell() {
 
   // Scroll to the right place after every route change
   useEffect(() => {
-    const top = () => window.scrollTo({ top: 0, behavior: "instant" });
+    const top = () => jumpToTop();
     const id = isHome && state?.scrollTo;
     if (!id || id === "top") return top();
     requestAnimationFrame(() => {

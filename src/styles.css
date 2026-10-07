@@ -108,15 +108,15 @@ footer p{margin:0}
  .link:hover{color:inherit}
 }
 
-/* React-specific replacements for former inline styles */
-h3.title{margin:0}
-.project.projects-first{margin-top:45px}
-
 /* View more button + projects page */
 .project.no-rule{border-bottom:0;padding-bottom:0}
 .more{display:flex;justify-content:center;margin-top:30px;padding-bottom:30px;border-bottom:1px solid var(--line)}
-.btn{display:inline-block;font:400 14px/23px var(--slab);color:var(--muted);text-decoration:none;text-align:center;padding:9px 24px;border:1px solid var(--line);border-radius:4px;background:transparent;cursor:pointer;transition:color .15s,border-color .15s,opacity .15s,transform .1s}
+.btn{display:inline-block;font:400 14px/23px var(--slab);color:var(--muted);text-decoration:none;text-align:center;padding:10px 28px;min-height:44px;touch-action:manipulation;-webkit-tap-highlight-color:transparent;position:relative;z-index:1;border:1px solid var(--line);border-radius:4px;background:transparent;cursor:pointer;transition:color .15s,border-color .15s,opacity .15s,transform .1s}
 .btn:hover{color:var(--fg);border-color:var(--muted)}
 .btn:active{opacity:.6;transform:translateY(1px)}
 .btn:focus-visible{outline:1px solid var(--fg);outline-offset:3px}
 .page-projects .project.projects-first{margin-top:0}
+.project.projects-first{margin-top:45px}
+.page-projects .project.projects-first{margin-top:0}
+[hidden]{display:none!important}
+h3.title{margin:0}
