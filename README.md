@@ -4,4 +4,4 @@
     npm run dev      # local dev server
     npm run build    # production build in dist/
 
-Content lives in `src/data.js`; styling in `src/styles.css` (same CSS as the HTML version).
+Content lives in `src/data.js`; styling in `src/styles.css`.
