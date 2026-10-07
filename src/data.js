@@ -1,5 +1,5 @@
 export const RESUME_URL =
-  "https://drive.google.com/drive/u/0/folders/1zbczrb6Qk3lN6BalIqzD3nu0MEpT5DqF";
+  "https://drive.google.com/file/d/1HypZlEntxd2vCZdR7Wazs-Tbc-XTwt85/view?usp=drive_link";
 
 // id = section id used for scrolling + scroll-spy
 export const NAV_ITEMS = [
