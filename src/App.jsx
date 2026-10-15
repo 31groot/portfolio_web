@@ -143,14 +143,14 @@ function Intro() {
       </div>
       <div>
         <p className="bio">
-          Hi, I'm Parv. I'm an undergraduate at <Hl>IIT Roorkee</Hl>, driven by curiosity about AI
-          and how to build it properly. I build <Hl>agents, retrieval pipelines</Hl>, and the{" "}
-          <Hl>backends</Hl> behind them, and I test them hard: <Hl>evaluation</Hl>, accuracy,
-          groundedness, and failure cases. If there's a new tool worth learning, I learn it by
-          building something real.
+          Hi, I'm Parv, an undergrad at <Hl>IIT Roorkee</Hl> obsessed with AI and the backends
+          that hold it up. I build <Hl>agents and retrieval pipelines</Hl>, then try my best to
+          break them: <Hl>evals</Hl>, groundedness, accuracy, failure cases. New tool worth
+          learning? I learn it by shipping something real.
         </p>
         <p className="bio">
-          Outside of code: i enjoy cricket, philosophy, and travelling to new places.
+          Off the keyboard: I bowl <Hl>130+ km/h</Hl>, argue about philosophy, chase random math
+          problems, sketch weird faces, and travel to learn how other people live.
         </p>
       </div>
     </section>
