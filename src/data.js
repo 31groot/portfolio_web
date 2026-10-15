@@ -11,21 +11,22 @@ export const NAV_ITEMS = [
 
 export const EXPERIENCE = {
   company: "Axturo",
-  role: "Full Stack Engineer",
+  role: "Full Stack Developer Intern",
   date: "Jan 2026 – Mar 2026",
   // [plain text, optional highlighted text, trailing text]
-bullets: [
-  [
-    "Built and deployed TableMitra, a QR-powered ",
-    "hospitality platform across 100+ hotels",
-    ", owning the REST API backend, PostgreSQL database, and production deployment",
+  bullets: [
+    [
+      "Built and deployed TableMitra, a QR-powered ",
+      "hospitality platform across 100+ hotels",
+      ", owning the REST API backend, PostgreSQL database, and production deployment",
+    ],
+    [
+      "Integrated the ",
+      "WhatsApp Business API",
+      " to automate guest service requests and route them to hotel staff, replacing manual and phone-based coordination",
+    ],
   ],
-  [
-    "Integrated the ",
-    "WhatsApp Business API",
-    " to automate guest service requests and route them to hotel staff, replacing manual and phone-based coordination",
-  ],
-],
+};
 
 export const OPEN_SOURCE = {
   org: "Haystack (deepset-ai)",
@@ -46,8 +47,8 @@ export const OPEN_SOURCE = {
     ],
   ],
   links: [
-    { label: "Merged PR", href: "PASTE_PR_URL_HERE" },
-    { label: "Issue", href: "PASTE_ISSUE_URL_HERE" },
+    { label: "Merged PR", href: "https://github.com/deepset-ai/haystack-core-integrations/pull/4100" },
+    { label: "Issue", href: "https://github.com/deepset-ai/haystack-core-integrations/issues/4097" },
   ],
 };
 
