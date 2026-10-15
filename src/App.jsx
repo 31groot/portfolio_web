@@ -1,6 +1,6 @@
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import { BrowserRouter, Link, useLocation, useNavigate } from "react-router-dom";
-import { CONTACT_LINKS, EXPERIENCE, NAV_ITEMS, PROJECTS, RESUME_URL } from "./data.js";
+import { CONTACT_LINKS, EXPERIENCE, NAV_ITEMS, OPEN_SOURCE, PROJECTS, RESUME_URL } from "./data.js";
 
 /* ---------- hooks ---------- */
 
@@ -179,6 +179,36 @@ function Experience({ data }) {
   );
 }
 
+function OpenSource({ data }) {
+  return (
+    <section id="open-source">
+      <h2>Open Source</h2>
+      <div className="row">
+        <h3 className="title">
+          {data.org}
+          <span className="badge">{data.status}</span>
+        </h3>
+        <span className="links">
+          <InlineLinks
+            items={data.links}
+            separator={<>{" "}<b>|</b>{" "}</>}
+          />
+        </span>
+      </div>
+      <p className="sub">{data.role} · {data.title}</p>
+      <ul className="exp-body">
+        {data.bullets.map(([pre, hl, post]) => (
+          <li key={hl}>
+            {pre}
+            <Hl>{hl}</Hl>
+            {post}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 function ProjectCard({ project }) {
   return (
     <article className="entry">
@@ -227,7 +257,7 @@ function Contact() {
     <section id="contact">
       <h2>Get in Touch</h2>
       <p>
-        If you're working on  systems, agents, or evals, or just want to talk about how software
+        If you're working on systems, agents, or evals, or just want to talk about how software
         behaves when things go wrong, I'd like to hear from you.
       </p>
       <p>
@@ -243,6 +273,7 @@ const Home = () => (
   <main className="wrap" id="top">
     <Intro />
     <Experience data={EXPERIENCE} />
+    <OpenSource data={OPEN_SOURCE} />
     <Projects projects={PROJECTS} limit={3} />
     <Contact />
   </main>
